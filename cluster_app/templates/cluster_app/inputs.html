@@ -1,0 +1,73 @@
+{% extends "cluster_app/base.html"%}
+{% block content%}
+    <section class="home">
+        <div class="text">INPUTS</div>
+
+        <div class="panel p12">
+            <div class="panel-header">
+               <p>Parameters</p>
+              </div>
+           </div>
+           <br>
+
+        <form class="f12" method="post" action="traitement.php">
+    
+       
+        
+        <div class="form-group">
+            <label for="title">Title:</label>
+            <input class="entree" type="text" id="title" name="title" class="form-control">
+          </div>
+
+          <div class="form-group">
+            <label for="name">DateFile:</label>
+            <select class="entree" name="pays" id="pays">
+                <option value="cluster">MixCom-exemple.csv</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="age">Package:</label>
+
+            <panel class="check">
+                <input  type="radio" name="age" value="MixMod" id="all"/> 
+                <label for="moins15">MixMod</label>
+                
+            </panel>
+
+            <panel class="check">
+                <input type="radio" name="age" value="MixtComp" id="medium15-25" /> 
+                <label for="moins15">MixtComp</label>   
+            </panel>
+
+            <panel class="check">
+                <input type="radio" name="age" value="BlockCluster" id="medium15-25" /> 
+                <label for="medium15-25">BlockCluster</label>
+            </panel>
+        </div>
+
+        <div class="form-group">
+            <label for="name">Fonction:</label>
+            <select class="entree" name="pays" id="pays">
+                <option value="cluster">Cluster</option>
+                <option value="predict">Predict</option>
+                
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="entree" for="name">Classification Mode:</label>
+            <textarea name="ameliorer" id="ameliorer">
+                
+            </textarea>
+          </div>
+        
+    
+    
+          <input type="submit" value="Create" class="save">
+
+
+    
+        </form>
+    </section>
+{% endblock content%}

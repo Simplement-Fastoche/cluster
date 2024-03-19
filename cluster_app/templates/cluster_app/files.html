@@ -1,0 +1,62 @@
+{% extends "cluster_app/base.html"%}
+{% block content%}
+    <section class="home">
+        <div class="text">FILES</div>
+
+        <form class="f1" method="post" action="traitement.php">
+            <div class="panel p1">
+              <div class="panel-header">
+                 <p>Set :
+                        <input  type="radio" name="age" value="All" id="all"/> 
+                        <label for="moins15">All</label>
+                        <input type="radio" name="age" value="medium15-25" id="medium15-25" /> 
+                        <label for="medium15-25"></label>
+                        <input class="pseudo" type="text" name="pseudo" id="pseudo" placeholder="ex: 0,1,3:4" size="30" maxlength="10" />
+                        <label>As</label>
+                        <select class="categorie" name="pays" id="pays">
+                            <option value="Categorical">Categorical</option>
+                            <option value="Categorical2">Categorical2</option>
+                            <option value="Categorical3">Categorical3</option>
+                            <option value="Categorical4">Categorical4</option>
+                            <option value="Categorical5">Categorical5</option>
+                          
+                        </select>
+
+                        <input class="apply" type="submit" value="apply" />
+                    </p>
+                </div>
+             </div>
+
+        
+        <div class="panel p2">
+            <div class="panel-header">
+                <p>Upload a file with a list of datatypes for each column  :</p><br>
+                <input type="file" name="aucun fichier choisi">
+                <br>
+            </div> 
+        </div>
+
+        <br>
+        <p>Fonction</p><br>
+        <hr>
+
+            <select class="panel p3" name="pays" id="pays">
+                <option value="Fonctional">Fonctional</option>
+                <option value="Fonctional 2">Fonctional 2</option>
+                <option value="Fonctional 3">Fonctional 3</option>
+                <option value="Fonctional 4">Fonctional 4</option>
+                <option value="Fonctional 5">Fonctional 5</option>
+               
+            </select> 
+           
+
+        <br>
+        {%csrf_token%}
+
+        {{form.as_p}}
+        <input type="submit" value="Save" class="save">
+
+    </form>
+
+    </section>
+{% endblock content%}

@@ -1,0 +1,109 @@
+{% load static %}
+<!DOCTYPE html>  
+<html lang="en">   
+
+    <head>          
+        <meta charset="utf-8" />   
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.1">       
+       
+        <link rel="stylesheet" href="{% static 'style.css' %}" > 
+
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+       
+        <title>CLUSTER AI</title>  
+        > 
+    </head> 
+
+
+    <body>
+        <nav class="sidebar">
+            <header>
+                <div class="image-text">
+                    <span class="image">
+                        <img src="{% static 'logocluster.jpg' %}" alt="logo">
+                    </span>
+                   
+                    <div class="text header-text">
+                        <span class="name">Python Lib</span>
+                        <span class="profession">Cluster AI</span>
+                    </div>
+                </div>
+
+                <i class='bx bx-chevron-right toggle'></i>
+            </header>
+
+            <div class="menu-bar">
+                <div class="menu">
+                   
+                    <ul class="menu-links">
+                        <li class="nav-link{% if active_page == 'index'%} active{% endif %}">
+                            <a href="/">
+                               
+                                <i class='bx bx-notepad icon' ></i>
+                                <span class="text nav-text">OVERVIEW</span>
+                            </a>
+                        </li>
+                        <li class="nav-link{% if active_page == 'files'%} active{% endif %}">
+                            <a href="/files">
+                                <i class='bx bx-file icon'></i>
+                                <span class="text nav-text">FILES</span>
+                            </a>
+                        </li>
+                        <li class="nav-link{% if active_page == 'inputs'%} active{% endif %}">
+                            <a href="/inputs">
+                                <i class='bx bxs-file-export icon'></i>
+                                <span class="text nav-text">INPUTS</span>
+                            </a>
+                        </li>
+                        <li class="nav-link{% if active_page == 'results'%} active{% endif %}">
+                            <a href="/results">
+                                <i class='bx bxs-file-import icon'></i>
+                                <span class="text nav-text">RESULTS</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                
+              <div class="bottom-content">
+                <li class="">
+                    <a href="#">
+                        <i class='bx bx-log-out icon' ></i>
+                        <span class="text nav-text">Logout</span>
+                    </a>
+                </li>
+
+                <li class="mode">
+                   <div class="moon-sun">
+                        <i class='bx bx-moon icon moon' ></i>
+        
+                        <i class='bx bx-sun icon sun' ></i>
+                   </div>
+                   <span class="mode-text text">Dark Mode </span>
+
+                   <div class="toggle-switch">
+                        <span class="switch"></span>
+                   </div>
+
+                </li>
+              </div>  
+            </div>
+        </nav>
+       
+       
+        <script src="{% static 'scripts.js' %}"></script>
+
+        {% block content%}
+
+        {% endblock content%}
+
+
+    </body>
+
+
+      <!-- Footer-->
+      <footer class="py-5 bg-dark">
+        <div class="container"><p class="m-0 text-center text-white">Copyright &copy; Your Website 2023</p></div>
+    </footer>
+</html>
