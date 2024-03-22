@@ -17,13 +17,11 @@
         <div class="form-group">
             <label for="title">Title:</label>
             <input class="entree" type="text" id="title" name="title" class="form-control">
-          </div>
+        </div>
 
           <div class="form-group">
             <label for="name">DateFile:</label>
-            <select class="entree" name="pays" id="pays">
-                <option value="cluster">MixCom-exemple.csv</option>
-            </select>
+            <input type="text" class="form-control" id="dataFile" placeholder="MixtComp-Example.csv" readonly>
           </div>
 
           <div class="form-group">
@@ -55,13 +53,17 @@
             </select>
           </div>
 
+         
+
           <div class="form-group">
-            <label class="entree" for="name">Classification Mode:</label>
-            <textarea name="ameliorer" id="ameliorer">
-                
-            </textarea>
-          </div>
-        
+            <label for="title">Labels Colums:</label>
+            <input class="entree" type="text" id="title" name="title" class="form-control">
+        </div>
+
+        <div class="form-group">
+            <label for="title">Cluster Groups:</label>
+            <input class="entree" type="text" id="title" name="title" class="form-control">
+        </div>
     
     
           <input type="submit" value="Create" class="save">

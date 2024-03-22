@@ -319,9 +319,10 @@ body.dark .switch::before{
     padding-left: 100px;
     padding: 5px 8px;
     padding-top: 13px;
+    margin-left: 10px;
     height: 60px;
     width: 1200px;
-    border: 1px solid rgb(120, 120, 135);
+    border: 1px solid rgb(196, 196, 201);
     background:var(--panel-color);
    
    
@@ -345,22 +346,39 @@ body.dark .switch::before{
     border-radius: 5px;
     padding-left: 15px;
     padding: 5px 8px;
+    margin-left: 10px;
     padding-top: 13px;
     height: 80px;
     width: 1200px;
-    border: 1px solid rgb(120, 120, 135);
+    border: 1px solid rgb(196, 196, 201);
     background:var(--panel-color);
    
 } 
+
+.fonction{
+    margin-left: 10px;
+}
 
 
 .p3{
     border-radius: 5px;
     padding: 5px 8px;
     padding-left: 15px;
+    margin-left: 10px;
     height: 30px;
     width: 1200px;
     border: 1px solid rgb(120, 120, 135);
+   
+} 
+.pPreview{
+    border-radius: 5px;
+    padding: 5px 8px;
+    padding-left: 15px;
+    margin-left: 10px;
+    height: 400px;
+    width: 1200px;
+    background:var(--panel-color);
+    border: 1px solid rgb(225, 225, 227);
    
 } 
 
@@ -382,9 +400,10 @@ body.dark .switch::before{
     border: 1px solid rgb(120, 120, 135);
     border-radius: 5px;
     padding: 5px;
-   
+    
+    margin-top: -19px;
     padding-left: 150px;
-    width: 1250px;
+    width: 1200px;
    
     color:var(--text-color);
 
@@ -464,7 +483,7 @@ body.dark .switch::before{
   
   .form-group label {
     text-align: right;
-    width: 100px; /* Adjust label width as needed */
+    width: 150px; /* Adjust label width as needed */
     margin-right: 10px; /* Add margin between label and input */
   }
   
@@ -505,5 +524,16 @@ body.dark .switch::before{
 }
 
 .navbar-nav .nav-item:hover {
-  background: red /* Optionnel : couleur de survol */
+ 
 }
+
+.table
+{
+    
+}
+
+.fichier{
+    height: 50px;
+}
+
+
