@@ -4,6 +4,8 @@ from django.template import loader
 import pandas as pd
 
 
+
+
 # Create your views here.
 
 def index (request):
@@ -12,11 +14,6 @@ def index (request):
    
     return render(request,"cluster_app/index.html",context)
     
-
-def files (request):
-    context={"active_page":"files",}
-    
-    return render(request,"cluster_app/files.html",context)
 
 def inputs (request):
     context={"active_page":"inputs",}
